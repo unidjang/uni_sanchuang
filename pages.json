@@ -1,0 +1,113 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "认领+惠农商业"
+			}
+		},
+		{
+            "path" : "pages/pick/pick",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "认领+采摘",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/labor_edu/labor_edu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "认领+劳动教育",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tourism/tourism",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "认领+特色旅游",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/center",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/center/baseinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/auth/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+		    "path" : "pages/auth/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#909399",
+	    "selectedColor": "#303133",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/index.png",
+	        "selectedIconPath": "static/index-selected.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/pick/pick",
+	        "iconPath": "static/center.png",
+	        "selectedIconPath": "static/center-selected.png",
+	        "text": "采摘"
+	    }, {
+	        "pagePath": "pages/labor_edu/labor_edu",
+	        "iconPath": "static/center.png",
+	        "selectedIconPath": "static/center-selected.png",
+	        "text": "劳动教育"
+	    }, {
+	        "pagePath": "pages/tourism/tourism",
+	        "iconPath": "static/center.png",
+	        "selectedIconPath": "static/center-selected.png",
+	        "text": "特色旅游"
+	    }, {
+	        "pagePath": "pages/center/center",
+	        "iconPath": "static/center.png",
+	        "selectedIconPath": "static/center-selected.png",
+	        "text": "我的"
+	    }]
+	}
+}
