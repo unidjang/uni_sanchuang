@@ -2,10 +2,11 @@
 const install = (Vue, vm) => {
 	vm.$u.utils = {}
 	// 工具1：检验是否登录，没有就跳转
-	vm.$u.utils.isLogin = () => {
-		// 检查是否有token，没有就跳转到登录，并返回FALSE，用于onload接下来的判断
-		const token = vm.vuex_token
-		if (!token) {
+	vm.$u.utils.isLogin = async () => {
+		// 检查token，不合格就跳转到登录，并返回FALSE，用于onload接下来的判断
+		// const token = vm.vuex_token
+		const res = await vm.$u.api.jwt_confirm() //模拟点击收藏时，没登录的效果(登录后20分钟，token就失效)
+		if (res.code==507) {
 			// 获取来源页面 
 			const currentPage = getCurrentPages().pop() //页面栈的栈顶
 			
@@ -38,7 +39,8 @@ const install = (Vue, vm) => {
 		}
 		return true
 	}
-	// 更新用户信息（因为经常用，所以封装成全局函数）
+	
+	// 工具2：更新用户信息（因为经常用，所以封装成全局函数）
 	vm.$u.utils.updateUser =async () => {
 		// 更新用户信息到前端的vuex（只要vuex_user的值一变，所有用到这玩意的值，也会跟着变，动态绑定）
 		const userInfo = await vm.$u.api.userInfo()

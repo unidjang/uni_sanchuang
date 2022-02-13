@@ -66,11 +66,65 @@
 		    "path" : "pages/auth/register",
 		    "style" :                                                                                    
 		    {
-		        "navigationBarTitleText": "",
+		        "navigationBarTitleText": "注册",
 		        "enablePullDownRefresh": false
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/center/tx",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/xgtx",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/questions",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "常见问题",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/labor_edu/fill_form",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "填写信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的认领",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/pick/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "农作物详情页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

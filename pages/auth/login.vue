@@ -74,6 +74,7 @@
 				});
 
 				setTimeout(() => {
+					uni.hideLoading()
 					this.$u.route({
 						type: "redirectTo",
 						url: 'pages/auth/register'

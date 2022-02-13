@@ -1,0 +1,25 @@
+<template>
+	<view>
+		1、怎么知道自己认领的农作物是否成熟？
+		<view class="u-p-l-45">
+			在“我的”--->“我的认领”中查看，然后选择是否前往亲自采摘回去
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+
+</style>
