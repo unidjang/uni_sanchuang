@@ -1,0 +1,10 @@
+
+.page.data-v-c2509e78 {
+	width: 100%;
+	height: 100% !important;
+}
+.upload-img.data-v-c2509e78 {
+	background: #000000;
+	color: #FFFFFF;
+}
+

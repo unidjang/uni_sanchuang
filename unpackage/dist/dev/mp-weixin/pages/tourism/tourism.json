@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "认领+特色旅游",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-swiper": "/uview-ui/components/u-swiper/u-swiper",
+    "u-notice-bar": "/uview-ui/components/u-notice-bar/u-notice-bar",
+    "u-calendar": "/uview-ui/components/u-calendar/u-calendar"
+  }
+}

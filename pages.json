@@ -143,6 +143,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/tourism/details/details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "皖西大裂谷",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

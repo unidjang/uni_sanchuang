@@ -1,0 +1,32 @@
+
+.list-data {
+	padding: 10px;
+}
+.list-img image {
+	width: 100%;
+	height: 180px;
+	border-radius: 5px;
+}
+.list-title {
+	padding: 5px 0px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.list-tips {
+	font-size: 14px;
+	color: #989898;
+}
+.present {
+	font-size: 20px;
+	font-weight: 700;
+	color: #d2bb9b;
+}
+.price {
+	padding: 5px 0px;
+}
+.original {
+	margin-left: 10px;
+	text-decoration: line-through;
+	color: #B0B0B0;
+}
+

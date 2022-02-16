@@ -7,20 +7,18 @@
 		<view class="subject">
 			<view class="subject-view">
 			<view class="subject-tab">
-				<view class="subject-tabs">酒店</view>
-				<view>机票</view>
-				<view>火车票</view>
+				<view class="subject-tabs">搜索景点</view>
+				<view>主题旅行</view>
+				<view>私家团</view>
 			</view>
 			<view class="horse">
 				<u-notice-bar bg-color="#fff" color="#d2bb9b" mode="vertical" :list="list"></u-notice-bar>
 			</view>
-			 <view class="type-tab">
-				 <view @click="onTab(value.type)" :class="[countrytyle === value.type?'type-tabs':'']" v-for="(value,index) in countrylist">{{value.name}}</view>
-			 </view>
+			 
 			 <view class="hotel-text">
 				 <view class="text-title">目的地</view>
 				 <view class="text-data">
-					 <text class="text-data-one">长沙</text>
+					 <text class="text-data-one">六安</text>
 					 <text class="text-data-two">
 						 我的位置
 					 </text>
@@ -28,7 +26,7 @@
 			 </view>
 			 
 			 <view class="hotel-text">
-			 	<view class="text-title">今日入住 中午离店</view>
+			 	<view class="text-title">选择日期</view>
 			 	<view class="text-data">
 			 		<text class="text-data-one" @click="show = true">{{startDate}} — {{endDate}}</text>
 			 		<text class="text-data-two">共{{nights}}晚</text>
@@ -41,7 +39,7 @@
 				 </view>
 			 </view>
 			 <view class="hotel-text">
-			 	<view class="text-title">价格/星级</view>
+			 	<view class="text-title">景区等级</view>
 			 	 <view class="hotel-inp">
 			 		<input placeholder="可选择价格星级"/>
 			 	</view>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-slider": "/uview-ui/components/u-slider/u-slider"
+  }
+}

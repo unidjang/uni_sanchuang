@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "认领+劳动教育",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-icon": "/uview-ui/components/u-icon/u-icon",
+    "u-row": "/uview-ui/components/u-row/u-row",
+    "u-col": "/uview-ui/components/u-col/u-col",
+    "u-image": "/uview-ui/components/u-image/u-image"
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/pick/pick",
+        "pages/labor_edu/labor_edu",
+        "pages/tourism/tourism",
+        "pages/center/center",
+        "pages/center/baseinfo",
+        "pages/auth/login",
+        "pages/auth/register",
+        "pages/center/tx",
+        "pages/center/xgtx",
+        "pages/center/questions",
+        "pages/labor_edu/fill_form",
+        "pages/center/order",
+        "pages/pick/details",
+        "pages/test/test",
+        "pages/tourism/list",
+        "pages/tourism/details/details"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uView",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#909399",
+        "selectedColor": "#303133",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "static/index.png",
+                "selectedIconPath": "static/index-selected.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/pick/pick",
+                "iconPath": "static/center.png",
+                "selectedIconPath": "static/center-selected.png",
+                "text": "认领采摘"
+            },
+            {
+                "pagePath": "pages/labor_edu/labor_edu",
+                "iconPath": "static/center.png",
+                "selectedIconPath": "static/center-selected.png",
+                "text": "劳动教育"
+            },
+            {
+                "pagePath": "pages/tourism/tourism",
+                "iconPath": "static/center.png",
+                "selectedIconPath": "static/center-selected.png",
+                "text": "特色旅游"
+            },
+            {
+                "pagePath": "pages/center/center",
+                "iconPath": "static/center.png",
+                "selectedIconPath": "static/center-selected.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap.json"
+}

@@ -20,13 +20,6 @@
 			</u-grid>
 		</view>
 
-		<u-popup v-model="show" mode="center" border-radius="14" width="600rpx" height="400rpx">
-			<view>出淤泥而不染，濯清涟而不妖</view>
-			<u-button @click="show = false">关闭</u-button>
-		</u-popup>
-		<!-- <u-button @click="show = true">打开弹窗</u-button>s -->
-
-		<!-- <u-image width="100%" height="3000rpx" :src="src"></u-image> -->
 		<view class="title">
 			企业项目介绍
 		</view>

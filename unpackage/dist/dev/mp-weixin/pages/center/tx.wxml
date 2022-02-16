@@ -1,0 +1,1 @@
+<view class="data-v-62020956"><view data-event-opts="{{[['tap',[['uploadImag']]]]}}" class="avartar data-v-62020956" bindtap="__e"><text class="data-v-62020956">头像</text><image style="width:80px;height:50px;border-radius:50%;" src="{{imgsrc}}" mode class="data-v-62020956"></image></view></view>
