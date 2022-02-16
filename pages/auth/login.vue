@@ -12,7 +12,10 @@
 				<view class="issue" @click="regist">注册</view>
 			</view>
 		</view>
+		
+		
 	</view>
+	
 </template>
 
 <script>
@@ -86,6 +89,7 @@
 </script>
 
 <style lang="scss" scoped>
+	
 	.u-border-bottom {
 		margin-bottom: 40rpx !important; //还要写个！important提高优先级。不太懂
 	}
