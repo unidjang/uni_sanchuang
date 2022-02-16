@@ -6,7 +6,7 @@
 			</view>
 			<view class="u-flex-1">
 				<view class="u-font-18 u-p-b-20">{{vuex_user.name}}</view>
-				<view class="u-font-14 u-tips-color">邮箱:{{vuex_user.email}}</view>
+				<view class="u-font-14 u-tips-color">邮箱:aaa@qq.com</view>
 			</view>
 		</view>
 		

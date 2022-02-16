@@ -3,7 +3,7 @@
 		<view class="u-search-box">
 			<view class="u-search-inner">
 				<u-icon name="search" color="#909399" :size="28"></u-icon>
-				<text class="u-search-text">在主页查看自己定的农作物是否成熟，选择采摘或者运送过来</text>
+				<text class="u-search-text">搜索</text>
 			</view>
 		</view>
 		<view class="u-menu-wrap">

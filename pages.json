@@ -152,6 +152,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/labor_edu/farmer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册土地",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

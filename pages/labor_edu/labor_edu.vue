@@ -3,7 +3,7 @@
 		<view class="u-search-box">
 			<view class="u-search-inner">
 				<u-icon name="search" color="#909399" :size="28"></u-icon>
-				<text class="u-search-text">在主页查看自己定的农作物是否成熟，选择采摘或者运送过来</text>
+				<text class="u-search-text">搜索</text>
 			</view>
 		</view>
 		<view class="u-menu-wrap">
@@ -21,7 +21,7 @@
 							<view class="item-title">
 								<text>{{item.name}}</text>
 							</view>
-							
+
 							<!-- 显示田地 -->
 							<view class="u-p-t-30">
 								<!-- gutter为内部两个组件的间距 -->
@@ -30,10 +30,10 @@
 									<u-col span="6" v-for="imsrc in src_list">
 										<!-- 写navigator里面是因为点击图片要能跳转 -->
 										<navigator class="goods-item" url="./fill_form">
-											<u-image width="100%" height="250rpx" :src="imsrc"></u-image>
-											<view class="title">耕地</view>
+											<u-image width="100%" height="250rpx" :src="imsrc.dest"></u-image>
+											<view class="title">{{imsrc.name}}</view>
 											<view class="u-flex u-row-between">
-												<view class="price">¥ 99</view>
+												<view class="price" style="width: 200rpx;">¥ {{imsrc.price}}</view>
 												<!-- <view class="sales">剩余：6</view> -->
 											</view>
 										</navigator>
@@ -60,11 +60,23 @@
 				menuHeight: 0, // 左边菜单的高度
 				menuItemHeight: 0, // 左边菜单item的高度
 
-				src_list: [
-					'https://img0.baidu.com/it/u=1107888977,2045736653&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=480',
-					'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F12002264765%2F641.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647308775&t=14924a0571a0ae6a9fccae70f18c497e',
-					'https://pic.quanjing.com/38/3x/QJ8478728232.jpg@!350h',
-					'https://pic.quanjing.com/t8/7p/QJ6997782583.jpg@!350h'
+				src_list: [{
+						name: '曙光村',
+						dest: 'https://img0.baidu.com/it/u=1107888977,2045736653&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=480',
+						price: '989'
+					}, {
+						name: '枣林村',
+						dest: 'https://pic.quanjing.com/t8/7p/QJ6997782583.jpg@!350h',
+						price: '748'
+					}, {
+						name: '储家岗',
+						dest: 'https://pic.quanjing.com/38/3x/QJ8478728232.jpg@!350h',
+						price: '977'
+					}, {
+						name: '孙岗镇',
+						dest: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F12002264765%2F641.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647308775&t=14924a0571a0ae6a9fccae70f18c497e',
+						price: '888'
+					},
 				]
 			}
 		},
@@ -114,25 +126,26 @@
 		padding: 20rpx;
 		margin-top: 30rpx;
 		box-shadow: 0 12rpx 20rpx 0 rgba(0, 0, 0, .1); //给栅格的格子写样式
-	
+
 		.title {
 			margin-top: 20rpx 0;
 			font-weight: 500;
 			font-size: 32rpx;
 			width: 100%;
 		}
-	
+
 		.price {
 			color: red;
 			width: 40%;
 			// 50的话，骨架就会跟后面那个sales的骨架连着，不好看
 		}
-	
+
 		.sales {
 			color: #888;
 			width: 40%;
 		}
 	}
+
 	.u-wrap {
 		height: calc(100vh);
 		/* #ifdef H5 */

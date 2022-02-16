@@ -41,7 +41,7 @@
 			 <view class="hotel-text">
 			 	<view class="text-title">景区等级</view>
 			 	 <view class="hotel-inp">
-			 		<input placeholder="可选择价格星级"/>
+			 		<input placeholder="可选择景区等级"/>
 			 	</view>
 			 </view>
 			 <view class="hotel-btn">

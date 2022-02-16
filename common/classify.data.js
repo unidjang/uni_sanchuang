@@ -49,7 +49,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },
    {
@@ -102,7 +108,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },{
       "name": "叶集区",
@@ -154,7 +166,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },{
       "name": "霍邱县",
@@ -206,7 +224,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },{
       "name": "霍山县",
@@ -258,7 +282,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },{
       "name": "金寨县",
@@ -310,7 +340,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },{
       "name": "舒城县",
@@ -362,7 +398,13 @@ export default[
             "key": "草莓",
             "icon": "../../static/plants/strawberry.png",
             "cat": 10
-          }
+          },
+		  {
+		    "name": "西瓜",
+		    "key": "西瓜",
+		    "icon": "../../static/plants/watermelon.png",
+		    "cat": 10
+		  }
       ]
    },
 ]
