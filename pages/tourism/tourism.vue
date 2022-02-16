@@ -1,59 +1,62 @@
 <template>
-	<view class="container">
-		<swiper class="banner-swiper" circular autoplay :interval="5000" :duration="1000">
-			<swiper-item class="banner-swiper-item" v-for="(item, index) in swipers" :key="index">
-				<image :src="item" mode="widthFix"></image>
-			</swiper-item>
-		</swiper>
-		<view class="content">
-			<!-- section-1 begin -->
-			<view class="section-1">
-				<navigator class="item" open-type="switchTab" url="/pages/index/index" hover-class="none">
-					<!-- <image src="/static/images/home/home_icon_ziqu1.png" mode="widthFix"></image> -->
-					<view class="wenyue-font">门店自取</view>
-					<view class="text-color-assist">下单免排队</view>
-				</navigator>
-				<navigator class="item" open-type="navigate" url="/pages/addresses/addresses" hover-class="none">
-					<!-- <image src="/static/images/home/home_icon_waimai1.png" mode="widthFix"></image> -->
-					<view class="wenyue-font">外卖</view>
-					<view class="text-color-assist">无需接触 送喜到家</view>
-				</navigator>
+	<view>
+		<view class="top-img">
+			<u-swiper indicator-pos="topRight" :list="swiperlist" border-radius="0" height="380"></u-swiper>
+		</view>
+		<div style="clear:both;"></div>
+		<view class="subject">
+			<view class="subject-view">
+			<view class="subject-tab">
+				<view class="subject-tabs">酒店</view>
+				<view>机票</view>
+				<view>火车票</view>
 			</view>
-			<!-- section-2 end -->
-			<!-- section-2 begin -->
-			<view class="section-2">
-				<navigator class="item" open-type="switchTab" url="/pages/mart/mart" hover-class="none">
-					<view class="title">
-						<image src="/static/images/home/home_icon_baihuo1.png"></image>
-						<view>喜茶百货</view>
-					</view>
-					<view class="tips">灵感商品 立即选购</view>
-				</navigator>
-				<navigator class="item" open-type="navigate" url="/pages/home/group-dinner" hover-class="none">
-					<view class="title">
-						<image src="/static/images/home/home_icon_qiye1.png"></image>
-						<view>企业团餐</view>
-					</view>
-					<view class="tips">50份起送</view>
-				</navigator>
+			<view class="horse">
+				<u-notice-bar bg-color="#fff" color="#d2bb9b" mode="vertical" :list="list"></u-notice-bar>
 			</view>
-			<!-- section-2 end -->
-			<view class="section-3">
-				<navigator class="my-integral" open-type="navigate" url="/pages/integrals/mall" hover-class="none">
-					<view class="integrals">
-						<view>我的积分</view>
-						<view class="neutra-font">63</view>
-					</view>
-					<view class="tips">
-						可兑换喜茶劵和丰富灵感周边
-					</view>
-				</navigator>
-				<navigator class="my-code" open-type="navigate" url="/pages/my/code" hover-class="none">
-					<image src="/static/images/home/home_icon_erweima.png"></image>
-					<view>会员码</view>
-				</navigator>
+			 <view class="type-tab">
+				 <view @click="onTab(value.type)" :class="[countrytyle === value.type?'type-tabs':'']" v-for="(value,index) in countrylist">{{value.name}}</view>
+			 </view>
+			 <view class="hotel-text">
+				 <view class="text-title">目的地</view>
+				 <view class="text-data">
+					 <text class="text-data-one">长沙</text>
+					 <text class="text-data-two">
+						 我的位置
+					 </text>
+				 </view>
+			 </view>
+			 
+			 <view class="hotel-text">
+			 	<view class="text-title">今日入住 中午离店</view>
+			 	<view class="text-data">
+			 		<text class="text-data-one" @click="show = true">{{startDate}} — {{endDate}}</text>
+			 		<text class="text-data-two">共{{nights}}晚</text>
+			 		</view>
+			 </view>
+			 <view class="hotel-text">
+			 	<view class="text-title">搜索</view>
+			 	 <view class="hotel-inp">
+					 <input placeholder="关键字/位置/品牌/酒店名"/>
+				 </view>
+			 </view>
+			 <view class="hotel-text">
+			 	<view class="text-title">价格/星级</view>
+			 	 <view class="hotel-inp">
+			 		<input placeholder="可选择价格星级"/>
+			 	</view>
+			 </view>
+			 <view class="hotel-btn">
+				 <button class="hotel-btns" @click="lists">搜索</button>
+			 </view>
 			</view>
 		</view>
+		<u-calendar active-bg-color="#d2bb9b" range-color="#d2bb9b" v-model="show" :mode="mode" @change="change">
+			<view slot="tooltip">
+				<view class="title">请选择住店/离店时间</view>
+			</view>
+		</u-calendar>
+		
 	</view>
 </template>
 
@@ -61,167 +64,171 @@
 	export default {
 		data() {
 			return {
-				swipers: [
-					"https://go.cdn.heytea.com/storage/ad/2020/05/21/bfd57914d80d4671b19f5d0ccc176cd5.jpg",
-					"https://go.cdn.heytea.com/storage/ad/2020/05/24/49f9b50738dd47878cf1ab54c2eee2e0.jpg",
-					"https://go.cdn.heytea.com/storage/ad/2020/05/01/e1c6915022c849fd9492377021aef454.jpg",
-					"https://go.cdn.heytea.com/storage/ad/2020/04/27/db60b797c1cd4afabe9666e7df958ffd.jpg",
-					"https://go.cdn.heytea.com/storage/ad/2020/05/21/4ba53dda599345bdaf28a08420dd1b6f.jpg"
-				]
+				list: [
+					'7天酒店钟点房打特价啦',
+					'奔跑吧暑假'
+				],
+				swiperlist:[
+				  {
+					image:'../../static/tourism/t1.jpg',
+					title:'暑假开始啦'
+				  },
+				  {
+					image:'../../static/tourism/t2.png',
+					title:'暑假开始啦'  
+				  },
+				  {
+					image:'../../static/tourism/t3.jpg',
+					title:'暑假开始啦'  
+				  }
+				],
+				countrylist:[
+					{name:'国内',type:0},
+					{name:'国外',type:1},
+					{name:'名宿',type:2}
+				],
+				countrytyle:0,
+				show: false,
+				mode: 'range',
+				startDate:"7月21日",
+				endDate:"7月23日",
+				nights:1
 			}
 		},
+		onLoad() {
+			
+		},
 		methods: {
+			onTab(type){
+				if(type!==this.countrytyle){
+					this.countrytyle = type
+				}
+			},
+			lists(){
+				uni.navigateTo({
+					url:'list'
+				})
+			},
+			change(e) {
+				//获取时间值
+				if(e.startMonth==e.endMonth){
+					this.nights = e.endDay - e.startDay
+				}
+				this.startDate = e.startMonth+'月'+e.startDay+'日'
+				this.endDate = e.endMonth+'月'+e.endDay+'日'
+			},
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
-	page {
-		max-height: 100%;
+	page{
+		background-color: #f5f5f5;
 	}
-	
-	.banner-swiper {
-		width: 100%;
-		height: 600rpx;
-		
-		.banner-swiper-item {
-			image {
-				width: 100%;
-			}
-		}
+	.title{
+		color: #d2bb9b;
+		text-align: center;
+		padding: 20rpx 0 0 0;
 	}
-	
-	.content {
-		width: 100%;
-		padding: 0 30rpx;
+	.top-img{
 		position: relative;
-	}
-	
-	.section-1 {
-		position: relative;
-		background-color: $bg-color-white;
-		margin-top: -60rpx;
-		border-radius: $border-radius-lg;
-		padding: 60rpx 0;
-		display: flex;
-		margin-bottom: 30rpx;
-		box-shadow: $box-shadow;
-		
-		.item {
-			flex: 1;
-			flex-shrink: 0;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			position: relative;
-			
-			&:nth-child(1):after {
-				content: '';
-				position: absolute;
-				right: 0;
-				top: 0;
-				bottom: 0;
-				width: 2rpx;
-				background-color: $border-color;
-			}
-			
-			image {
-				width: 100rpx;
-				margin-bottom: 20rpx;
-			}
-			
-			.wenyue-font {
-				font-size: 48rpx;
-				margin-bottom: 10rpx;
-			}	
+		image{
+			width: 100%;
+			height: 180px;
 		}
 	}
-	
-	.section-2 {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 30rpx;
-		
-		.item {
-			width: 335rpx;
-			background-color: #EAEBEC;
-			padding: $spacing-row-lg 0;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			border-radius: $border-radius-lg;
-			
-			.title {
-				width: 100%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: $font-size-lg;
-				
-				image {
-					width: 60rpx;
-					height: 60rpx;
-					margin-right: 10rpx;
-				}
+	.subject-view{
+		border-radius: 5px;
+		overflow: auto;
+		zoom: 1;
+		// background-color: #fff;
+	}
+	.subject{
+		position: absolute;
+		top: 110px;
+		width: 95%;
+		margin: 0px 10px;
+		.subject-tab{
+			overflow: auto;
+			zoom: 1;
+			view{
+				height: 45px;
+				width: 33.3%;
+				float: left;
+				text-align: center;
+				line-height: 45px;
+				font-size: 15px;
+				background-color: #f1f1f1;
+				font-weight: bold;
 			}
-			
-			.tips {
-				color: $text-color-assist;
-				font-size: $font-size-base;
+			.subject-tabs{
+				background-color: #fff;
+				color: #d2bb9b;
 			}
 		}
 	}
-	
-	.section-3 {
-		margin-bottom: 30rpx;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		font-size: $font-size-base;
-		color: $text-color-assist;
-		padding: 0 10rpx;
-		
-		.my-integral {
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			
-			.integrals {
-				display: flex;
-				align-items: center;
-				font-size: $font-size-lg;
-				color: $text-color-base;
-				margin-bottom: 10rpx;
-				
-				.neutra-font {
-					margin-left: 10rpx;
-					font-size: 42rpx;
-				}
+	.horse{
+		padding: 5px 10px;
+		background-color: #fff;
+	}
+	.type-tab{
+		overflow: auto;
+		zoom: 1;
+		background-color: #fff;
+		padding: 5px 20px;
+		view{
+			float: left;
+			height: 25px;
+			margin-right: 50px;
+			font-size: 15px;
+			font-weight: 700;
+		}
+		.type-tabs{
+			border-bottom: 1.5px solid #d2bb9b;
+			color: #d2bb9b;
+		}
+	}
+	.hotel-text{
+		padding: 10px 20px 5px 20px;
+		background-color: #fff;
+		.text-title{
+			color: #929292;
+			font-size: 14px;
+		}
+		.text-data{
+			padding: 7px 0px;
+			overflow: auto;
+			zoom: 1;
+			border-bottom: 1px solid #f1f1f1;
+			.text-data-one{
+				font-size: 17px;
+				font-weight: bold;
+				float: left;
+			}
+			.text-data-two{
+				color: #929292;
+				font-size: 14px;
+				float: right
 			}
 		}
-		
-		.my-code {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			padding: 0 30rpx;
-			position: relative;
-			
-			image {
-				width: 60rpx;
-				height: 60rpx;
-				margin-bottom: $spacing-col-sm;
-			}
-			
-			&:before {
-				content: " ";
-				position: absolute;
-				left: 0;
-				top: 0;
-				bottom: 0;
-				border-left: 1rpx solid rgba($color: $border-color, $alpha: 0.6);
-			}
+		.hotel-inp{
+			padding: 7px 0px;	
+			border-bottom: 1px solid #f1f1f1;
 		}
+	}
+	.hotel-btn{
+		padding: 10px 20px;
+		background-color: #fff;
+		.hotel-btns{
+			background-color: #d2bb9b;
+			height: 40px;
+			line-height: 40px;
+			color: #fff;
+			border-radius: 30px;
+			font-size: 15px;
+		}
+	}
+	.u-btn--primary{
+		background-color: #d2bb9b!important;
 	}
 </style>
