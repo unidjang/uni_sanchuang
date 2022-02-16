@@ -68,15 +68,16 @@
 				],
 				swiperlist:[
 				  {
-					image:'../../static/tourism/t1.jpg',
+					// image:'../../static/tourism/t1.jpg',
+					image:'/static/tourism/t1.jpg',
 					title:'暑假开始啦'
 				  },
 				  {
-					image:'../../static/tourism/t2.png',
+					image:'/static/tourism/t2.png',
 					title:'暑假开始啦'  
 				  },
 				  {
-					image:'../../static/tourism/t3.jpg',
+					image:'/static/tourism/t3.jpg',
 					title:'暑假开始啦'  
 				  }
 				],

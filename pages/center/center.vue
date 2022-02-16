@@ -2,7 +2,7 @@
 	<view>
 		<view class="u-flex user-box u-p-l-30 u-p-r-20 u-p-b-30 u-p-t-30">
 			<view class="u-m-r-10">
-				<u-avatar src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2F2021%2Fedpic%2F9b%2F44%2F1c%2F9b441c7299e1294079dd569ae03989f8_1.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647312518&t=17b740dc4453e78935f4bce246775658" size="140"></u-avatar>
+				<u-avatar src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2Fedpic_360_360%2F0b%2Fcc%2Fde%2F0bccde7ed09b1226274ca3c08117d667.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647618127&t=fc2cebc58519500cd3dd5d8aebf98746" size="140"></u-avatar>
 			</view>
 			<view class="u-flex-1">
 				<view class="u-font-18 u-p-b-20">{{vuex_user.name}}</view>

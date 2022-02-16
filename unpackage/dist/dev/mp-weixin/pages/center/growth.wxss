@@ -1,0 +1,7 @@
+
+.titlee {
+	margin-left: 280rpx;
+	margin-top: 20rpx;
+	font-size: 50rpx;
+}
+

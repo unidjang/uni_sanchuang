@@ -96,16 +96,16 @@ var components
 try {
   components = {
     uIcon: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-icon/u-icon */ "uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 203))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-icon/u-icon */ "uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 221))
     },
     uRow: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-row/u-row */ "uview-ui/components/u-row/u-row").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-row/u-row.vue */ 217))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-row/u-row */ "uview-ui/components/u-row/u-row").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-row/u-row.vue */ 235))
     },
     uCol: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-col/u-col */ "uview-ui/components/u-col/u-col").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-col/u-col.vue */ 224))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-col/u-col */ "uview-ui/components/u-col/u-col").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-col/u-col.vue */ 242))
     },
     uImage: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-image/u-image */ "uview-ui/components/u-image/u-image").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-image/u-image.vue */ 231))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-image/u-image */ "uview-ui/components/u-image/u-image").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-image/u-image.vue */ 249))
     }
   }
 } catch (e) {
@@ -224,11 +224,23 @@ var _classifyData = _interopRequireDefault(__webpack_require__(/*! @/common/clas
       menuHeight: 0, // 左边菜单的高度
       menuItemHeight: 0, // 左边菜单item的高度
 
-      src_list: [
-      'https://img0.baidu.com/it/u=1107888977,2045736653&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=480',
-      'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F12002264765%2F641.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647308775&t=14924a0571a0ae6a9fccae70f18c497e',
-      'https://pic.quanjing.com/38/3x/QJ8478728232.jpg@!350h',
-      'https://pic.quanjing.com/t8/7p/QJ6997782583.jpg@!350h'] };
+      src_list: [{
+        name: '曙光村',
+        dest: 'https://img0.baidu.com/it/u=1107888977,2045736653&fm=253&fmt=auto&app=138&f=JPEG?w=640&h=480',
+        price: '989' },
+      {
+        name: '枣林村',
+        dest: 'https://pic.quanjing.com/t8/7p/QJ6997782583.jpg@!350h',
+        price: '748' },
+      {
+        name: '储家岗',
+        dest: 'https://pic.quanjing.com/38/3x/QJ8478728232.jpg@!350h',
+        price: '977' },
+      {
+        name: '孙岗镇',
+        dest: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F12002264765%2F641.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1647308775&t=14924a0571a0ae6a9fccae70f18c497e',
+        price: '888' }] };
+
 
 
   },

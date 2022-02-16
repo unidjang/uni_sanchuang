@@ -96,13 +96,13 @@ var components
 try {
   components = {
     uSwiper: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-swiper/u-swiper */ "uview-ui/components/u-swiper/u-swiper").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-swiper/u-swiper.vue */ 182))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-swiper/u-swiper */ "uview-ui/components/u-swiper/u-swiper").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-swiper/u-swiper.vue */ 200))
     },
     uNoticeBar: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-notice-bar/u-notice-bar */ "uview-ui/components/u-notice-bar/u-notice-bar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-notice-bar/u-notice-bar.vue */ 238))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-notice-bar/u-notice-bar */ "uview-ui/components/u-notice-bar/u-notice-bar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-notice-bar/u-notice-bar.vue */ 256))
     },
     uCalendar: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-calendar/u-calendar */ "uview-ui/components/u-calendar/u-calendar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-calendar/u-calendar.vue */ 245))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-calendar/u-calendar */ "uview-ui/components/u-calendar/u-calendar").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-calendar/u-calendar.vue */ 263))
     }
   }
 } catch (e) {
@@ -234,15 +234,16 @@ var _default =
 
       swiperlist: [
       {
-        image: '../../static/tourism/t1.jpg',
+        // image:'../../static/tourism/t1.jpg',
+        image: '/static/tourism/t1.jpg',
         title: '暑假开始啦' },
 
       {
-        image: '../../static/tourism/t2.png',
+        image: '/static/tourism/t2.png',
         title: '暑假开始啦' },
 
       {
-        image: '../../static/tourism/t3.jpg',
+        image: '/static/tourism/t3.jpg',
         title: '暑假开始啦' }],
 
 

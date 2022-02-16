@@ -125,7 +125,6 @@
 	      right: 10px;
 	      transform: skew(15deg) rotate(4deg);
 	    }
-	
 	  }
 	  
 	.navigation {
