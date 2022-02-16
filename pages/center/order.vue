@@ -49,7 +49,7 @@
 									</view>
 									<!-- <view class="logistics btn">查看物流</view> -->
 									<view class="exchange btn ">取消认领</view>
-									<view class="evaluate btn">查看长势</view>
+									<view class="evaluate btn" @click="look">查看长势</view>
 								</view>
 							</view>
 							<u-loadmore :status="loadStatus[0]" bgColor="#f2f2f2"></u-loadmore>
@@ -329,6 +329,12 @@
 			}
 		},
 		methods: {
+			look(){
+				this.$u.route({
+					type:"redirectTo",
+					url:'pages/center/growth'
+				})
+			},
 			reachBottom() {
 				// 此tab为空数据
 				if (this.current != 2) {

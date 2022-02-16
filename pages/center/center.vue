@@ -44,7 +44,7 @@
 			}
 		},
 		onLoad() {1
-			if(!this.$u.utils.isLogin()) return
+			// if(!this.$u.utils.isLogin()) return
 		},
 		methods: {
 			toBaseInfo(){
