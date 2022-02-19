@@ -1,14 +1,14 @@
 <template>
 	<view class="paper">
 		<image src="../../static/labor.jpg" mode="aspectFit" class="u-p-l-30"></image>
-		<u-form :model="form" ref="uForm" class="u-p-r-40 u-p-l-40">
-			<u-form-item label="土地位置" label-width="190rpx" required>
+		<u-form :model="form" ref="uForm" class="u-p-r-40 u-p-l-40" >
+			<u-form-item label="土地位置" label-width="190rpx"  >
 				<u-input v-model="form.name" type="select" />
 			</u-form-item>
-			<u-form-item label="种植蔬菜类别" label-width="190rpx" required>
+			<u-form-item label="种植蔬菜类别" label-width="190rpx" >
 				<u-input v-model="form.name" type="select" />
 			</u-form-item>
-			<u-form-item label="标定价格" label-width="190rpx" required>
+			<u-form-item label="标定价格" label-width="190rpx" >
 				<u-input v-model="form.sex" type="select" />
 			</u-form-item>
 

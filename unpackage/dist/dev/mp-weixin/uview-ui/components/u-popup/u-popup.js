@@ -80,7 +80,7 @@ var components
 try {
   components = {
     uMask: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-mask/u-mask */ "uview-ui/components/u-mask/u-mask").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-mask/u-mask.vue */ 421))
+      return __webpack_require__.e(/*! import() | uview-ui/components/u-mask/u-mask */ "uview-ui/components/u-mask/u-mask").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-mask/u-mask.vue */ 432))
     },
     uIcon: function() {
       return __webpack_require__.e(/*! import() | uview-ui/components/u-icon/u-icon */ "uview-ui/components/u-icon/u-icon").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-icon/u-icon.vue */ 221))

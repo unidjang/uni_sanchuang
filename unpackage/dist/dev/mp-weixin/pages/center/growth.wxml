@@ -1,1 +1,1 @@
-<view><view class="titlee">实时监控</view><image style="width:800rpx;margin-top:20rpx;" src="../../static/jk.jpg" mode="aspectFix"></image></view>
+<view><view class="titlee">实时监控</view><image class="bk" style="width:800rpx;margin-top:20rpx;" src="../../static/jk.jpg" mode="aspectFix"></image><view class="title2">作物生长指标</view><view class="charts-box"><qiun-data-charts vue-id="5815e36e-1" type="radar" chartData="{{chartData}}" background="none" bind:__l="__l"></qiun-data-charts></view></view>

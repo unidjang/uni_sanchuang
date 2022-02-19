@@ -14,15 +14,15 @@
 				<navigator class="item" open-type="navigate" url="/pages/home/group-dinner" hover-class="none">
 					<view class="title2">
 						<image src="/static/plants/strawberry.png"></image>
-						<view>农民</view>
+						<view>农户</view>
 					</view>
 				</navigator>
-				<navigator class="item" open-type="navigate" url="/pages/home/group-dinner" hover-class="none">
+				<!-- <navigator class="item" open-type="navigate" url="/pages/home/group-dinner" hover-class="none">
 					<view class="title2">
 						<image src="/static/plants/strawberry.png"></image>
 						<view>企业</view>
 					</view>
-				</navigator>
+				</navigator> -->
 			</view>
 			<!--  -->
 			<input class="u-border-bottom" v-model="name" placeholder="请输入昵称" />
@@ -107,7 +107,7 @@
 				margin-bottom: 30rpx;
 
 				.item {
-					width: 150rpx;
+					width: 200rpx;
 					height: 50rpx;
 					background-color: #EAEBEC;
 					padding: $spacing-row-lg 0;

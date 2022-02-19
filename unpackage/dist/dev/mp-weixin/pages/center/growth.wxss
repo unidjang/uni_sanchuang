@@ -1,6 +1,29 @@
 
+.bk {
+	/* width: 209px; */
+	/* margin: 29px auto; */
+	/* padding: 8px 16px; */
+	border-radius: 8px;
+	background: #f4f0ea;
+	outline: 6px solid #b4a078;
+}
 .titlee {
+	color: transparent;
+	font-size: 40px;
+	font-weight: bold;
+	background: linear-gradient(45deg, rgba(0, 173, 181, 1) 0%, rgba(0, 173, 181, .4) 100%);
+	-webkit-background-clip: text;
 	margin-left: 280rpx;
+	margin-top: 20rpx;
+	font-size: 50rpx;
+}
+.title2 {
+	color: transparent;
+	font-size: 40px;
+	font-weight: bold;
+	background: linear-gradient(45deg, rgba(0, 173, 181, 1) 0%, rgba(0, 173, 181, .4) 100%);
+	-webkit-background-clip: text;
+	margin-left: 230rpx;
 	margin-top: 20rpx;
 	font-size: 50rpx;
 }

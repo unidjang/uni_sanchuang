@@ -44,7 +44,7 @@
   margin-bottom: 30rpx;
 }
 .wrap .content .section-2 .item.data-v-6e828681 {
-  width: 150rpx;
+  width: 200rpx;
   height: 50rpx;
   background-color: #EAEBEC;
   padding: 30rpx 0;

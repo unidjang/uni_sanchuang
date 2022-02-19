@@ -257,9 +257,11 @@ var _default =
       setTimeout(function () {
         uni.hideLoading();
         _this.$u.route({
-          type: "switchTab",
-          url: 'pages/pick/pick' });
-
+          // type: "switchTab",
+          type: "redirectTo",
+          url: 'pages/labor_edu/farmer'
+          // url: 'pages/pick/pick'
+        });
       }, 200);
     },
     edu: function edu() {var _this2 = this;

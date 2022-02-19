@@ -1,8 +1,7 @@
 <template>
-	<view class="wrap">
+	<view class="wrap ">
 		<view class="top"></view>
-		<view class="content">
-			我注册了764090759@qq.com   hwj750391684hwj
+		<view class="content ">
 			<view class="title">欢迎登录认领＋惠农</view>
 			<input class="u-border-bottom" v-model="email" placeholder="请输入邮箱" />
 			<input class="u-border-bottom" type="password" v-model="password" placeholder="请输入密码" />
@@ -89,6 +88,34 @@
 </script>
 
 <style lang="scss" scoped>
+	.paper {
+	  width: 350px;
+	  position: relative;
+	  margin: 30px auto;
+	  padding: 30px 0;
+	  border: 1px solid #efefef;
+	  background-color: #FFFFFD;
+	  background-image: url(../../static/paper.png);
+	  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+		
+	  &::before, &::after {
+	    content: '';
+	    z-index: -1;
+	    position: absolute;
+	    left: 10px;
+	    bottom: 10px;
+	    width: 45%;
+	    height: 55%;
+	    max-height: 100px;
+	    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	    transform: skew(-15deg) rotate(-4deg);
+	  }
+	  &::after {
+	    left: auto;
+	    right: 10px;
+	    transform: skew(15deg) rotate(4deg);
+	  }
+	}
 	
 	.u-border-bottom {
 		margin-bottom: 40rpx !important; //还要写个！important提高优先级。不太懂

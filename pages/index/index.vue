@@ -90,8 +90,10 @@
 				setTimeout(() => {
 					uni.hideLoading()
 					this.$u.route({
-						type: "switchTab",
-						url: 'pages/pick/pick'
+						// type: "switchTab",
+						type: "redirectTo",
+						url: 'pages/labor_edu/farmer'
+						// url: 'pages/pick/pick'
 					})
 				}, 200)
 			},
